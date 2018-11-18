@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+}
+header{
+    height: 100%;
+    min-height: 600px;
+    background: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center center no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+header .logo{
+    float:left;
+    color: #f7ba3e;
+    font-size:32px;
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+/* 遮罩 */
+/* header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top :0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); 
+} */    
+
+header nav{
+    padding:1px;  /*需要分开父子外边距，如果加在header上，则nav和.navbar的外边距仍没有分开，.logo的外边距会跟着.navbar变动*/
+}
+header .navbar {
+    width:600px;
+    margin:30px auto;
+    text-align: center;
+}
+header .navbar li {
+    display: inline-block;
+    margin-left: 20px;
+    /* margin-top: 10px; */
+}
+header .navbar a {
+    color:#fff;
+    font-size:20px;
+    padding:5px;
+    display:  block;
+}
+header .navbar a:hover {
+    /* color:#f7ba3e; */
+    background: #f7ba3e;
+    border-radius:3px;
+}
+.header-info {
+    min-width:600px;
+    text-align: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+} 
+.header-info h1{
+    font-size: 40px;
+    color: #fff;
+}
+.header-info h2{
+    font-size: 75px;
+    color: #fff;
+}
+
+header .button {
+    margin-top:20px;
+}
